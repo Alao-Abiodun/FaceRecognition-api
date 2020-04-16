@@ -13,10 +13,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.json(databases.users);
-});
-
+app.get("/", (req, res) => { res.send('It is working!'); });
 app.post("/signin", signin.handleSignin);
 app.post("/register", register.handleRegister);
 app.get("/profile/:id", profile.handleGetProfile);
