@@ -6,10 +6,10 @@ const db = knex({
     client: 'pg',
     connection: {
         connectionString: process.env.DATABASE_URL,
-        ssl: true
+        ssl: true,
         // user: 'postgres',
         // password: 'alao1996',
-        // database: 'smart_brain'
+        // database: 'postgresql-shallow-27741'
     }
 });
 
