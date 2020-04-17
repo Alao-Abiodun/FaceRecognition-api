@@ -5,10 +5,11 @@ const knex = require('knex');
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'postgresql-shallow-27741',
-        user: 'postgres',
-        password: 'alao1996',
-        database: 'smart_brain'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true
+        // user: 'postgres',
+        // password: 'alao1996',
+        // database: 'smart_brain'
     }
 });
 
