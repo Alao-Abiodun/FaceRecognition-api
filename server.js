@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const register = require('./controllers/register.controller');
@@ -9,7 +8,7 @@ const image = require('./controllers/image.controller');
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use(cors());
 
